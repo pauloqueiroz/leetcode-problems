@@ -24,28 +24,29 @@ public class MergeSortedArray {
 	public static void main(String[] args) {
 		int[] n1 = {1,2,3,0,0,0};
 		int[] n2 = {2,5,6};
-		new MergeSortedArray().merge(n1, 3, n2, 3);
+		MergeSortedArray algorithm = new MergeSortedArray();
+		algorithm.merge(n1, 3, n2, 3);
 		print(n1);
 
 		
 		int[] n3 = {1};
 		int[] n4 = {};
-		new MergeSortedArray().merge(n3, 1, n4, 0);
+		algorithm.merge(n3, 1, n4, 0);
 		print(n3);
 		
 		int[] n5 = {0};
 		int[] n6 = {1};
-		new MergeSortedArray().merge(n5, 0, n6, 1);
+		algorithm.merge(n5, 0, n6, 1);
 		print(n5);
 	
 		int[] n7 = {4,5,6,0,0,0};
 		int[] n8 = {1,2,3};
-		new MergeSortedArray().merge(n7, 3, n8, 3);
+		algorithm.merge(n7, 3, n8, 3);
 		print(n7);
 		
 		int[] n9 = {-1,0,0,3,3,3,0,0,0};
 		int[] n10 = {1,2,2};
-		new MergeSortedArray().merge(n9, 6, n10, 3);
+		algorithm.merge(n9, 6, n10, 3);
 		print(n9);
 
 		
