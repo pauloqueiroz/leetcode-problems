@@ -25,19 +25,19 @@ public class RemoveElement {
 		int[] nums = {3,2,2,3};
 		int val = 3;
 		int result = algorithm.removeElement(nums, val);
-		print(result, nums);
+		ArrayProblemsUtils.printResultArray(result, nums);
 		
 		// case 2
 		int[] nums2 = {0,1,2,2,3,0,4,2};
 		int val2 = 2;
 		int result2 = algorithm.removeElement(nums2, val2);
-		print(result2, nums2);
+		ArrayProblemsUtils.printResultArray(result2, nums2);
 		
 		// case 3
 		int[] nums3 = {1};
 		int val3 = 1;
 		int result3 = algorithm.removeElement(nums3, val3);
-		print(result3, nums3);
+		ArrayProblemsUtils.printResultArray(result3, nums3);
 		
 	}
 
@@ -59,11 +59,4 @@ public class RemoveElement {
 		nums[i] = aux;
 	}
 
-	private static void print(int result, int[] nums) {
-		System.out.print("Elements: "+result +" -> {");
-		for (int i = 0; i < nums.length; i++) {
-			System.out.print(nums[i] + ", ");
-		}
-		System.out.println("}");
-	}
 }
