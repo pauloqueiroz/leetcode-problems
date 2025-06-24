@@ -37,9 +37,10 @@ public class ValidIpAddress {
     			}
     			
     		}
+    		i++;
     		
     	}
-    	return List.of();
+    	return ipsValidos;
     }
     
 }
